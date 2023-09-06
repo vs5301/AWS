@@ -157,3 +157,35 @@ Multi Factor Authentication
 
         Hardware Key Fob MFA Device for AWS GovCloud (US)
             Provided by SurePassID (3rd party)
+
+Three options to access AWS:
+AWS Management Console (protected by password + MFA)
+AWS Command Line Interface (CLI): protected by access keys
+AWS Software Developer Kit (SDK): for code: protected by access keys
+
+Access Keys are secret
+Access Key ID ~= username
+Secret Access Key ~= password
+
+AWS CLI: tool that enables you to interact with AWS services using command in your command-line shell. Direct access to public APIs of AWS.
+
+AWS SDK: Language-specific APIs (set of libraries). Enables you to access and manage AWS services programmatically and is embedded within your application.
+Eg: AWS Cli
+
+IAM Roles: An IAM entity that defines a set of permissions for making AWS service requests, that will be used by AWS services.
+Some AWS service will need to perform actions on your behalf. To do so, we will assign permission to AWS services with IAM Roles.
+Common roles:
+EC2 Instance Roles
+Lambda Function Roles
+Roles for CloudFormation
+
+IAM Security Tools
+
+    IAM Credentials Report (account-level)
+        a report that lists all your account's users and sthe status of the credentials
+
+    IAM Access Advisor (user-level)
+        Access advisor shows the servies permission granted to a user and when those services were last accessed.
+        This information can be used to revise policies.
+
+IAM Policies: An entity that when attached to an identity or resource, defines their permissions.
