@@ -189,3 +189,68 @@ IAM Security Tools
         This information can be used to revise policies.
 
 IAM Policies: An entity that when attached to an identity or resource, defines their permissions.
+
+Amazon EC2
+
+    EC2 = Elastic Compute Cloud = Infrastructure as a Service
+    It mainly consists in the capability of:
+        Renting virtual machines (EC2)
+        Storing data on virtual drives (EBS)
+        Distributing load across machines (ELB)
+        Scaling the services using an auto-scaling group (ASG)
+
+EC2 sizing and configuration options
+
+    Operating System: Linux, Windows or Mac OS
+    How much compute power & cores (CPU)
+    How much random-access memory (RAM)
+    How much storage space:
+        Network-attached (EBS & EFS)
+        hardware (EC2 Instance Store)
+    Network card: speed of the card, Public IP address
+    Firewall rules: security group
+    Bootstrap script (configure at first launch): EC2 USer Data
+
+It is possible to bootstrap our instances using an EC2 User data script.
+Bootstrapping means launching commands when a machine starts.
+
+EC2 Instance Types -
+
+    General Purpose
+        General purpose instances provide a balance of compute, memory and networking resouces, and can be used for a variety of diverse workloads. These instances are ideal for applications that use their resources in equal proportions such as web servers and code repositories.
+
+        Great for a diversity of workloads such as web servers or code repositories.
+        Balance between:
+            Compute
+            Memory
+            Networking
+
+    Compute Optimised
+        Compute Optimized instances are ideal for compute bound applications that benefit from high performance processors. Instance belonging to this family are well suited for batch processing workloads, media transcoding, high performance web servers, high performace computing (HPC), scientific modeling, dedicated gaming servers ad server engine, machine learning inference and other compute intensive applications
+
+        Great for compute-intensive tasks that require high performance processors:
+            Batch processing workloads
+            Media transcoding
+            High perforamnce web servers
+            High performace computing (HPC)
+            Scientific modeling & machine learning
+            Dedicated gaming servers
+
+    Memory Optimised
+        Memory optimized instances are designed to deliver fast performance for workloads that process large data sets in memory
+
+        Use cases:
+            High preformance, relational/non-relational databases.
+            Distributed web scale cache stores
+            In-memory databases optimized for BI (Business Intelligence)
+            Applications performaing real-time processing or unstructured data.
+
+    Storage Optimized
+        Storage optimized instances are designed for workloads that require high, sequential read and write access to very large data sets on local storage. They are optimized to deliver tens of thousnads of low-latency, random I/O operations per second (IOPS) to applications.
+
+        Use cases:
+            High frequency online transaction processing (OLTP) systems
+            Relational & NoSQL databsases
+            Cache for in-memory databses (eg, Redis)
+            Data warehousing applications
+            Distributed file systems
